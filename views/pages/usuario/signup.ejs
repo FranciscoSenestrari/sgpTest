@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="card card-login mx-auto mt-5">
+    <div class="card-header" id="chLogin">Ingreso</div>
+    <div class="card-body">
+      <form action="create"  method="post" class="">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre</label>
+          <input name="nombre" class ="form-control" id="exampleInputName" type="text" placeholder="Su Nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Apellido</label>
+          <input name="apellido" class ="form-control" id="exampleInputLastName" type="text" placeholder="Su Apellido" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Correo</label>
+          <input name="correo" class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Su correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input name="contrasenia" class="form-control" id="exampleInputPassword1" type="password" placeholder="Su contraseña" required >
+        </div>
+        <!--
+        <div class="form-group">
+          <input name="contrasenia" class="form-control" id="exampleInputRePassword1" type="password" placeholder="Repetir contraseña" required >
+        </div>
+      -->
+        <input type="submit" class="btn btn-primary btn-block"  value="Registrar">
+      </form>
+      <form action="login">
+        <input type="submit" class="btn btn-danger btn-block" href="login.ejs" value="Cancelar">
+
+      </form>
+    </div>
+  </div>
+</div>
